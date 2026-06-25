@@ -1,0 +1,39 @@
+{
+  "name": "sakenowa-mcp-vercel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vercel deploy wrapper for @yawaragi/sakenowa-mcp — exposes the MCP streamable-HTTP endpoint as a Next.js Pages-API function, suitable for Vercel serverless.",
+  "engines": {
+    "node": "22.x"
+  },
+  "packageManager": "pnpm@11.1.2",
+  "scripts": {
+    "dev": "next dev -p 3030",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@yawaragi/sakenowa-mcp": "0.1.0",
+    "next": "16.2.7",
+    "pg": "^8.21.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.19",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^19.2.14",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "minimumReleaseAge": 20160,
+    "minimumReleaseAgeExclude": [
+      "@yawaragi/sakenowa-mcp"
+    ],
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
+  }
+}

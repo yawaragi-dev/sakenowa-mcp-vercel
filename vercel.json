@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "regions": ["fra1"],
+  "functions": {
+    "pages/api/mcp.ts": {
+      "memory": 512,
+      "maxDuration": 30
+    }
+  }
+}
