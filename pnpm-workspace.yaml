@@ -1,2 +1,6 @@
+# Build-script approval for native deps. `false` means "do NOT run the
+# install script, silently" — matches yawaragi's pattern. We deny
+# sharp because this wrapper is API-only (no Next.js Image component),
+# so the optimised image-processing binary isn't needed at runtime.
 allowBuilds:
-  sharp: set this to true or false
+  sharp: false

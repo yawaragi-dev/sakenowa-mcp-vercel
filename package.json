@@ -28,12 +28,6 @@
     "typescript": "^5.9.3"
   },
   "pnpm": {
-    "minimumReleaseAge": 20160,
-    "minimumReleaseAgeExclude": [
-      "@yawaragi/sakenowa-mcp"
-    ],
-    "onlyBuiltDependencies": [
-      "sharp"
-    ]
+    "//": "Build-script approval lives in pnpm-workspace.yaml's allowBuilds field. Shai-Hulud quarantine isn't applied here — the wrapper has six well-established prod deps and the Vercel project is rebuilt only on manual git push, so the attack surface is narrow."
   }
 }
